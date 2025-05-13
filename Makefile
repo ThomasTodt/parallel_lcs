@@ -7,6 +7,9 @@ CFLAGS = -O3 -fopenmp -Wall
 # Targets
 TARGETS = lcs lcs2
 
+debug: CFLAGS += -DDEBUGMATRIX
+debug: all
+
 # Default rule
 all: $(TARGETS)
 
